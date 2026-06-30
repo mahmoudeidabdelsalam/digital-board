@@ -1,20 +1,13 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  trailingSlash: true,
+  output: "export",
+
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-    ],
   },
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
+
+  trailingSlash: true,
 };
 
 export default nextConfig;

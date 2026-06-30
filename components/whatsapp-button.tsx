@@ -1,0 +1,10 @@
+import { MessageCircle } from 'lucide-react';
+
+export function WhatsAppButton({ href }: { href: string }) {
+  return (
+    <a href={href} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-primary to-secondary px-6 py-3 font-semibold text-white shadow-lg transition-transform hover:scale-[1.02]">
+      <MessageCircle className="h-5 w-5" />
+      تواصل عبر واتساب
+    </a>
+  );
+}

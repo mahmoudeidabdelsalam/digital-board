@@ -16,7 +16,7 @@ export function Footer() {
         <div className="max-w-md">
           <div className="flex items-center gap-3">
             <Link href="#hero" className="flex items-center gap-3">
-                <Image src="/logo.png" alt="Digital Board Logo" width={320} height={79} className="w-55 h-auto" />
+                <Image src="/logo.webp" alt="Digital Board Logo" width={220} height={54} className="h-auto" />
             </Link>
           </div>
           <p className="mt-4 text-white/65">نحن نُحوّل الأفكار إلى هويات رقمية قوية، تجارب مميزة، ومشاريع جاهزة للنجاح.</p>

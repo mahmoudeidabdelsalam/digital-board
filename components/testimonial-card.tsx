@@ -4,7 +4,7 @@ import type { Testimonial } from '@/types';
 
 export function TestimonialCard({ testimonial, index }: { testimonial: Testimonial; index: number }) {
   return (
-    <motion.article initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: index * 0.08 }} className="rounded-[1.75rem] border border-white/10 bg-white/6 p-7 backdrop-blur-2xl">
+    <motion.article initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} transition={{ delay: index * 0.08 }} className="rounded-lg border border-white/10 bg-white/6 p-7 backdrop-blur-2xl">
       <div className="flex items-center gap-1 text-secondary">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} className="h-4 w-4 fill-current" />

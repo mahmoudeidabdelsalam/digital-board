@@ -23,7 +23,7 @@ export function Navbar() {
     <header className={cn('sticky top-0 z-40 w-full transition-all duration-300', scrolled && 'bg-black/40 backdrop-blur-xl')}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="#hero" className="flex items-center gap-3">
-            <Image src="/logo.png" alt="Digital Board Logo" width={320} height={79} className="w-[220px] h-auto" />
+            <Image src="/logo.webp" alt="Digital Board Logo" width={320} height={79} className="w-[220px] h-auto" />
         </Link>
 
         <div className="hidden items-center gap-7 lg:flex">
@@ -32,7 +32,7 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <a href="#contact" className="rounded-full bg-linear-to-r from-primary to-secondary px-4 py-2 text-sm font-semibold text-white">
+          <a href="#contact" className="rounded-full bg-blue-800 px-4 py-2 text-sm font-semibold text-white">
             ابدأ الآن
           </a>
         </div>
@@ -46,7 +46,7 @@ export function Navbar() {
         <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} className="border-t border-white/10 bg-black/80 px-4 py-4 backdrop-blur-xl lg:hidden">
           <div className="flex flex-col gap-3">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="rounded-2xl px-3 py-2 text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white" onClick={() => setOpen(false)}>
+              <Link key={item.href} href={item.href} className="rounded-lg px-3 py-2 text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white" onClick={() => setOpen(false)}>
                 {item.label}
               </Link>
             ))}

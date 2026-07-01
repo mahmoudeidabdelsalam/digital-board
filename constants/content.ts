@@ -31,23 +31,64 @@ export const portfolio = [
     title: 'الرأي الثاني',
     category: 'Website',
     description: 'منصة تجمع بين المريض والأطباء النخبة ، حيث تقدم للمريض تجربة حجز موعد في عيادة افتراضية اونلاين.',
-    image: './portfolio-1.png',
+    image: './portfolio-1.webp',
     link: 'https://secondopinion.sa',
   },
   {
     title: 'تقنية 5 C',
     category: 'Website',
     description: 'شركة رائدة في مجال تطوير البرمجيات وأتمتة التحول الرقمي',
-    image: './portfolio-2.png',
+    image: './portfolio-2.webp',
     link: 'https://fivectech.com',
   },
   {
     title: 'Pinos Pizzeriaa',
     category: 'Website and E-commerce',
     description: 'مطعم إيطالي في الإسماعيلية، وبفضل خبرة مهنية مثبتة تمتد لأربعة عشر عامًا في مجال المطبخ الإيطالي',
-    image: './portfolio-3.png',
+    image: './portfolio-3.webp',
     link: 'https://pinospizzeriaa.com',
   },
+  {
+    title: 'قرطاس',
+    category: 'Website and E-commerce',
+    description: 'قرطاس… ليست مجرد علامة تجارية، بل مساحة هادئة لكل من يعشق الكتابة، ويقدّر الجمال، ويبحث عن تنظيم يليق بذوقه.',
+    image: './portfolio-4.webp',
+    link: 'https://qirtas-store.com/',
+  },
+  {
+    title: 'restohub',
+    category: 'Website and E-commerce',
+    description: 'يُعدّ "ريستو هب" من أبرز موردي معدات المطاعم في كيبيك، حيث يُقدّم معدات مطابخ تجارية جديدة ومستعملة عالية الجودة لشركات خدمات الطعام في جميع أنحاء كيبيك وكندا.',
+    image: './portfolio-5.webp',
+    link: 'https://restohub.net/',
+  },
+  {
+    title: 'سيرمنت',
+    category: 'Website',
+    description: 'شركة متخصصة في تقديم خدمات إدارة المرافق والصيانة الشاملة للمباني والمجمعات السكنية والتجارية، من خلال باقات مرنة مصممة بعناية لتناسب مختلف احتياجات العملاء، وتضمن استدامة العقار وجودة حياة السكان.',
+    image: './portfolio-6.webp',
+    link: 'https://sermnt.sa/',
+  },
+  {
+    title: "مكتب Aida & Habib's",
+    category: 'Website',
+    description: 'يقدّم الاستشارات والخدمات القانونية المتكاملة في جميع فروع القانون.',
+    image: './portfolio-7.webp',
+    link: 'https://aidaandhabibs.com/',
+  },  {
+    title: 'وودلي',
+    category: 'Website',
+    description: 'وودلي هو أول سوق إلكتروني للأخشاب بنقرة واحدة.',
+    image: './portfolio-8.webp',
+    link: 'https://woodly.app/',
+  },
+  {
+    title: 'NOI',
+    category: 'Website',
+    description: 'اسمنا "نوي" يعني "نحن" باللغة الإيطالية، مما يعكس التزامنا بالتواصل والتكاتف.',
+    image: './portfolio-9.webp',
+    link: 'https://noi-eg.com',
+  }
 ];
 
 export const testimonials = [

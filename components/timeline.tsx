@@ -3,7 +3,7 @@ import type { TimelineItem } from '@/types';
 
 export function Timeline({ items }: { items: TimelineItem[] }) {
   return (
-    <div className="relative rounded-[2rem] border border-white/10 bg-white/6 p-8 backdrop-blur-2xl">
+    <div className="relative rounded-lg border border-white/10 bg-white/6 p-8 backdrop-blur-2xl">
       <div className="absolute right-8 top-8 bottom-8 w-px bg-gradient-to-b from-primary to-secondary" />
       <div className="space-y-6">
         {items.map((item, index) => (

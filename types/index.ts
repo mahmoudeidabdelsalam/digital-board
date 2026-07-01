@@ -5,6 +5,7 @@ export interface ServiceItem {
 }
 
 export interface PortfolioItem {
+  link: string;
   title: string;
   category: string;
   description: string;

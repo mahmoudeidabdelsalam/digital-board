@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { navItems } from '@/constants/content';
 import { cn } from '@/lib/utils';
@@ -22,13 +23,7 @@ export function Navbar() {
     <header className={cn('sticky top-0 z-40 w-full transition-all duration-300', scrolled && 'bg-black/40 backdrop-blur-xl')}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="#hero" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary font-black text-white shadow-lg">
-            DB
-          </div>
-          <div>
-            <div className="text-lg font-bold text-white">Digital Board</div>
-            <div className="text-sm text-white/55">Agency</div>
-          </div>
+            <Image src="/logo.png" alt="Digital Board Logo" width={320} height={79} className="w-[220px] h-auto" />
         </Link>
 
         <div className="hidden items-center gap-7 lg:flex">
@@ -37,7 +32,7 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          <a href="#contact" className="rounded-full bg-gradient-to-r from-primary to-secondary px-4 py-2 text-sm font-semibold text-white">
+          <a href="#contact" className="rounded-full bg-linear-to-r from-primary to-secondary px-4 py-2 text-sm font-semibold text-white">
             ابدأ الآن
           </a>
         </div>

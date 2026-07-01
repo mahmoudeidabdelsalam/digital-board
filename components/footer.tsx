@@ -1,11 +1,12 @@
 import { Facebook, Instagram, Linkedin, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const socialLinks = [
-  { href: 'https://wa.me/201001234567', label: 'واتساب', icon: MessageCircle },
-  { href: 'https://facebook.com', label: 'فيسبوك', icon: Facebook },
-  { href: 'https://instagram.com', label: 'إنستغرام', icon: Instagram },
-  { href: 'https://linkedin.com', label: 'لينكدإن', icon: Linkedin },
+  { href: 'https://wa.me/201094107302', label: 'واتساب', icon: MessageCircle },
+  { href: 'https://www.facebook.com/profile.php?id=61591149077498', label: 'فيسبوك', icon: Facebook },
+  { href: 'https://www.instagram.com/digitalboard.dev/', label: 'إنستغرام', icon: Instagram },
+  { href: 'https://www.linkedin.com/in/mahmoudeidabdelsalam/', label: 'لينكدإن', icon: Linkedin },
 ];
 
 export function Footer() {
@@ -14,13 +15,9 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
         <div className="max-w-md">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary font-black text-white shadow-lg">
-              DB
-            </div>
-            <div>
-              <div className="text-lg font-bold text-white">Digital Board</div>
-              <div className="text-sm text-white/55">Agency</div>
-            </div>
+            <Link href="#hero" className="flex items-center gap-3">
+                <Image src="/logo.png" alt="Digital Board Logo" width={320} height={79} className="w-55 h-auto" />
+            </Link>
           </div>
           <p className="mt-4 text-white/65">نحن نُحوّل الأفكار إلى هويات رقمية قوية، تجارب مميزة، ومشاريع جاهزة للنجاح.</p>
         </div>

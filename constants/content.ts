@@ -7,16 +7,15 @@ export const services = [
   { title: 'هوية بصرية', description: 'شعار، ألوان، خطوط، ومحتوى بصري يُميّز علامتك.', icon: 'Crown' },
   { title: 'تصميم جرافيك', description: 'ملفات تسويقية، بوسترات، عروض، ومحتوى احترافي.', icon: 'Wand2' },
   { title: 'تحسين محركات البحث', description: 'تحسين هيكلي ونفسي لرفع الظهور في النتائج.', icon: 'Search' },
-  { title: 'الدعم الفني', description: 'مواكبة مستمرة وتحديثات لضمان استقرار مشروعك.', icon: 'Headphones' },
 ];
 
 export const whyChooseUs = [
-  { title: 'Fast Delivery', description: 'تسليم سريع مع التركيز على الجودة والوضوح.' },
-  { title: 'Modern UI', description: 'تصاميم حديثة تعكس احترافية علامتك.' },
-  { title: 'Responsive', description: 'مُحسّنة لكل الأجهزة بواجهة متناسقة.' },
-  { title: 'SEO Ready', description: 'متوافقة مع أفضل الممارسات لرفع الظهور.' },
-  { title: 'Cloudflare Optimized', description: 'أداء ممتاز مع نشر سهل على Cloudflare Pages.' },
-  { title: 'Premium Design', description: 'تفاصيل دقيقة وأفكار مبتكرة تظهر قيمتك.' },
+  { title: 'تسليم سريع', description: 'تسليم سريع مع التركيز على الجودة والوضوح.' },
+  { title: 'تصاميم احترافي', description: 'تصاميم حديثة تعكس احترافية علامتك.' },
+  { title: 'الأجهزة', description: 'مُحسّنة لكل الأجهزة بواجهة متناسقة.' },
+  { title: 'تحسين محركات البحث', description: 'متوافقة مع أفضل محركات البحث ورفع الظهور.' },
+  { title: 'كلاود فلير', description: 'أداء ممتاز مع نشر سهل على Cloudflare Pages.' },
+  { title: 'أفكار', description: 'تفاصيل دقيقة وأفكار مبتكرة تظهر قيمتك.' },
 ];
 
 export const workSteps = [
@@ -29,40 +28,25 @@ export const workSteps = [
 
 export const portfolio = [
   {
-    title: 'Nova Studio',
+    title: 'الرأي الثاني',
     category: 'Website',
-    description: 'موقع براند فاخر للعلامات التجارية ذات الطابع الراقي.',
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80',
+    description: 'منصة تجمع بين المريض والأطباء النخبة ، حيث تقدم للمريض تجربة حجز موعد في عيادة افتراضية اونلاين.',
+    image: './portfolio-1.png',
+    link: 'https://secondopinion.sa',
   },
   {
-    title: 'Luxe Market',
-    category: 'E-commerce',
-    description: 'متجر إلكتروني بصري يرفع التحويل ويُسهل الشراء.',
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'Aero Brand',
-    category: 'Branding',
-    description: 'هوية بصرية جديدة ومميزة لعلامة ناشئة في قطاع التكنولوجيا.',
-    image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'Pulse Social',
-    category: 'Social Media',
-    description: 'حملة محتوى بصرية لإبراز القيم والرسالة الخاصة بالعلامة.',
-    image: 'https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'Orion UI',
-    category: 'UI Design',
-    description: 'تصميم واجهات احترافي يُحسّن تجربة المستخدم ويعزز الالتزام.',
-    image: 'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    title: 'North Labs',
+    title: 'تقنية 5 C',
     category: 'Website',
-    description: 'منصة شركة تقنية مع تجربة ديناميكية وسريعة.',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+    description: 'شركة رائدة في مجال تطوير البرمجيات وأتمتة التحول الرقمي',
+    image: './portfolio-2.png',
+    link: 'https://fivectech.com',
+  },
+  {
+    title: 'Pinos Pizzeriaa',
+    category: 'Website and E-commerce',
+    description: 'مطعم إيطالي في الإسماعيلية، وبفضل خبرة مهنية مثبتة تمتد لأربعة عشر عامًا في مجال المطبخ الإيطالي',
+    image: './portfolio-3.png',
+    link: 'https://pinospizzeriaa.com',
   },
 ];
 

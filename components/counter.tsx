@@ -22,7 +22,7 @@ export function Counter({ value, suffix, label }: { value: number; suffix: strin
   }, [value]);
 
   return (
-    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="min-w-[120px] rounded-2xl border border-white/10 bg-white/8 px-4 py-3 backdrop-blur-xl">
+    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="min-w-30 rounded-2xl border border-white/10 bg-white/8 px-4 py-3 backdrop-blur-xl flex flex-col items-center justify-center">
       <div className="text-2xl font-black text-white">
         {displayValue}
         {suffix}

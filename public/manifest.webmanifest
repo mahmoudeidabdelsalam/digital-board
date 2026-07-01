@@ -1,0 +1,10 @@
+{
+  "name": "Digital Board",
+  "short_name": "DB",
+  "description": "وكالة تصميم رقمية حديثة تقدم مواقع، متاجر إلكترونية، هوية بصرية، وSEO.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000105",
+  "theme_color": "#3E66FC",
+  "icons": []
+}

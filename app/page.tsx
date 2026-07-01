@@ -12,11 +12,10 @@ import { SectionTitle } from '@/components/section-title';
 import { ServiceCard } from '@/components/service-card';
 import { PortfolioCard } from '@/components/portfolio-card';
 import { Counter } from '@/components/counter';
-// import { Timeline } from '@/components/timeline';
 import { TestimonialCard } from '@/components/testimonial-card';
 import { WhatsAppButton } from '@/components/whatsapp-button';
 import { Footer } from '@/components/footer';
-import { services, portfolio, whyChooseUs, workSteps, testimonials } from '@/constants/content';
+import { services, portfolio, whyChooseUs, testimonials } from '@/constants/content';
 const counters = [
   { value: 200, suffix: '+', label: 'مشروع منجز' },
   { value: 96, suffix: '%', label: 'رضا العملاء' },

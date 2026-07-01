@@ -71,7 +71,7 @@ export default function HomePage() {
 
       <Navbar />
 
-      <section id="hero" className="relative isolate overflow-hidden px-4 pb-24 pt-32 sm:px-6 lg:px-8">
+      <section id="hero" className="relative isolate overflow-hidden px-4 pb-4 pt-4 lg:pb-24 lg:pt-32 sm:px-6 lg:px-8">
         <div className="absolute inset-0 -z-10">
           <div className="absolute left-1/2 top-0 h-105 w-105 -translate-x-1/2 rounded-full bg-primary/30 blur-3xl" />
           <div className="absolute right-[-10%] top-24 h-56 w-56 rounded-full bg-secondary/20 blur-3xl" />
@@ -97,7 +97,7 @@ export default function HomePage() {
                 <MessageCircle className="h-5 w-5 text-secondary" /> واتساب
               </a>
             </div>
-            <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/70">
+            <div className="mt-10 flex flex-row gap-6 text-sm text-white/70">
               {counters.map((counter) => (
                 <Counter key={counter.label} value={counter.value} suffix={counter.suffix} label={counter.label} />
               ))}
@@ -132,7 +132,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="services" className="px-4 py-24 sm:px-6 lg:px-8">
+      <section id="services" className="px-4 py-6 lg:py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionTitle title="خدماتنا" subtitle="حلول رقمية متكاملة من الفكرة إلى التنفيذ" />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -143,14 +143,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="why-us" className="px-4 py-24 sm:px-6 lg:px-8">
+      <section id="why-us" className="px-4 py-6 lg:py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionTitle title="لماذا نحن" subtitle="السر وراء كل مشروع نُنجزه" />
           <div className="mt-12">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.2 }} className="rounded-4xl border border-white/10 bg-white/6 p-8 backdrop-blur-2xl">
               <h3 className="text-2xl font-bold text-white">عملية عمل مخصصة</h3>
               <p className="mt-4 text-white/65">نبدأ من فهم الهدف ثم نُبني حلًا بصريًا وتقنيًا مُحسّنًا للنتائج.</p>
-              <div className="mt-8 grid gap-4 grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-8 grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {whyChooseUs.map((item) => (
                   <div key={item.title} className="flex items-start gap-3 rounded-2xl border border-white/10 bg-black/20 p-4">
                     <div className="mt-0.5 rounded-full bg-linear-to-r from-primary to-secondary p-2">
@@ -168,7 +168,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="portfolio" className="px-4 py-24 sm:px-6 lg:px-8">
+      <section id="portfolio" className="px-4 py-6 lg:py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionTitle title="أعمالنا" subtitle="أمثلة على المشاريع التي أضفت عليها قيمة" />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -179,7 +179,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="testimonials" className="px-4 py-24 sm:px-6 lg:px-8">
+      <section id="testimonials" className="px-4 py-6 lg:py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionTitle title="آراء العملاء" subtitle="العملاء يثقون فينا لأننا نُقدّم نتائج ملموسة" />
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -190,7 +190,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="px-4 py-24 sm:px-6 lg:px-8">
+      <section className="px-4 py-6 lg:py-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-white/10 bg-linear-to-r from-primary/30 to-secondary/30 p-8 shadow-glow backdrop-blur-2xl sm:p-12 lg:p-16">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
@@ -204,7 +204,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="contact" className="px-4 pb-24 sm:px-6 lg:px-8">
+      <section id="contact" className="px-4 py-6 lg:pb-24 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl rounded-4xl border border-white/10 bg-white/6 p-8 backdrop-blur-2xl sm:p-10">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
             <div>

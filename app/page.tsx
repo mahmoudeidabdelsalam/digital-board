@@ -13,7 +13,7 @@ import { ServiceCard } from '@/components/service-card';
 import { PortfolioCard } from '@/components/portfolio-card';
 import { Counter } from '@/components/counter';
 import { TestimonialCard } from '@/components/testimonial-card';
-import { WhatsAppButton } from '@/components/whatsapp-button';
+import { WhatsAppButtonEG, WhatsAppButtonKSA } from '@/components/whatsapp-button';
 import { Footer } from '@/components/footer';
 import { services, portfolio, whyChooseUs, testimonials } from '@/constants/content';
 const counters = [
@@ -203,7 +203,10 @@ export default function HomePage() {
               </h2>
               <p className="mt-4 text-lg text-white/75">نُجهّز لك خطة واضحة، تصميمًا قويًا، ونتائج تُحدث فرقًا من اليوم الأول.</p>
             </div>
-            <WhatsAppButton href={whatsappHrefEG} />
+            <div className='flex flex-col gap-4 lg:flex-row lg:items-center'>
+              <WhatsAppButtonEG href={whatsappHrefEG} />
+              <WhatsAppButtonKSA href={whatsappHrefKSA} />
+            </div>
           </motion.div>
         </div>
       </section>

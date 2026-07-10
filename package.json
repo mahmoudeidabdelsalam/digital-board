@@ -6,8 +6,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "cf:build": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare preview",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write ."
@@ -27,7 +25,6 @@
     "zod": "^3.14.1"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^1.20.1",
     "@tailwindcss/postcss": "^4.1.10",
     "@types/node": "^22.10.1",
     "@types/react": "^19.2.0",
@@ -38,7 +35,6 @@
     "prettier": "^3.9.4",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4.3.2",
-    "typescript": "^5.7.3",
-    "wrangler": "^4.110.0"
+    "typescript": "^5.7.3"
   }
 }

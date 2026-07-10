@@ -5,8 +5,8 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://digital-board.pages.dev/',
-      lastModified: new Date(),
+      url: 'https://example.com',
+      lastModified: new Date('2026-06-30'),
       changeFrequency: 'monthly',
       priority: 1,
     },

@@ -55,11 +55,12 @@ export default function HomePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const whatsappHref = 'https://wa.me/201094107302';
+  const whatsappHrefEG = 'https://wa.me/201094107302';
+  const whatsappHrefKSA = 'https://wa.me/+966579032273';
 
   const onSubmit = (values: ContactFormValues) => {
     const encodedMessage = encodeURIComponent(`السلام عليكم،\nاسمي ${values.name}\n${values.message}`);
-    window.open(`${whatsappHref}?text=${encodedMessage}`, '_blank', 'noopener,noreferrer');
+    window.open(`${whatsappHrefEG}?text=${encodedMessage}`, '_blank', 'noopener,noreferrer');
     reset();
   };
 
@@ -93,8 +94,11 @@ export default function HomePage() {
               <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-lg bg-linear-to-r from-[#02135b] to-[#021fa2] px-6 py-3 font-semibold text-white shadow-glow transition-transform hover:scale-[1.02]">
                 ابدأ مشروعك <ArrowLeft className="h-5 w-5" />
               </a>
-              <a href={whatsappHref} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-green-600 px-6 py-3 font-semibold text-white backdrop-blur-xl transition-transform hover:scale-[1.02]">
-                <MessageCircle className="h-5 w-5 text-secondary" /> واتساب
+              <a href={whatsappHrefEG} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-green-600 px-6 py-3 font-semibold text-white backdrop-blur-xl transition-transform hover:scale-[1.02]">
+                <MessageCircle className="h-5 w-5 text-secondary" /> واتساب (مصر)
+              </a>
+              <a href={whatsappHrefKSA} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 bg-green-600 px-6 py-3 font-semibold text-white backdrop-blur-xl transition-transform hover:scale-[1.02]">
+                <MessageCircle className="h-5 w-5 text-secondary" /> واتساب (السعودية)
               </a>
             </div>
             <div className="mt-10 flex lg:flex-row flex-col gap-6 text-sm text-white/70">
@@ -199,7 +203,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-4 text-lg text-white/75">نُجهّز لك خطة واضحة، تصميمًا قويًا، ونتائج تُحدث فرقًا من اليوم الأول.</p>
             </div>
-            <WhatsAppButton href={whatsappHref} />
+            <WhatsAppButton href={whatsappHrefEG} />
           </motion.div>
         </div>
       </section>
